@@ -5,7 +5,7 @@ import spinal.lib._
 case class Chip8() extends Component{
   val io = new Bundle{
     val keys = slave Flow Bits(16 bits)
-    val
+    val screen_RorW = out Bool()
   }
 }
 object Chip8 extends App {
